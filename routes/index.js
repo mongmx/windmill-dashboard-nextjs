@@ -58,6 +58,12 @@ const routes = [
     path: '/blank',
     component: Blank,
   },
+  {
+    path: '/categories'
+  },
+  {
+    path: '/product'
+  },
 ]
 
 export default routes

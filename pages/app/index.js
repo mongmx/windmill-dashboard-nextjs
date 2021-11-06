@@ -1,12 +1,11 @@
 import React, { useState, useEffect } from 'react';
 
-import CTA from 'components/CTA';
 import InfoCard from 'components/Cards/InfoCard';
 import ChartCard from 'components/Chart/ChartCard';
 import { Doughnut, Line } from 'react-chartjs-2';
 import ChartLegend from 'components/Chart/ChartLegend';
 import PageTitle from 'components/Typography/PageTitle';
-import { ChatIcon, CartIcon, MoneyIcon, PeopleIcon } from '../../icons';
+import { ChatIcon, CartIcon, MoneyIcon, ModalsIcon } from '../../icons';
 import RoundIcon from 'components/RoundIcon';
 import response from 'utils/demo/tableData';
 import {
@@ -53,20 +52,18 @@ function Dashboard() {
     <div className='md:px-8 sm:px-20'>
       <PageTitle>Dashboard</PageTitle>
 
-      <CTA />
-
       {/* <!-- Cards --> */}
       <div className='grid gap-6 mb-8 md:grid-cols-2 xl:grid-cols-4'>
-        <InfoCard title='Total clients' value='6389'>
+        <InfoCard title='Total products' value='289'>
           <RoundIcon
-            icon={PeopleIcon}
+            icon={ModalsIcon}
             iconColorClass='text-orange-500 dark:text-orange-100'
             bgColorClass='bg-orange-100 dark:bg-orange-500'
             className='mr-4'
           />
         </InfoCard>
 
-        <InfoCard title='Account balance' value='$ 46,760.89'>
+        <InfoCard title='Total campiagn' value='15'>
           <RoundIcon
             icon={MoneyIcon}
             iconColorClass='text-green-500 dark:text-green-100'

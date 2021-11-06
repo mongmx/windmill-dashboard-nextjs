@@ -1,5 +1,6 @@
 import React from 'react';
 
+// Call to Action component
 function CTA() {
   return (
     <a
